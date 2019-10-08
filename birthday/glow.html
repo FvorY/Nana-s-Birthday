@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text glowing</title>
+        <style media="screen">
+          /* ---------------
+            My first code!
+            date:19/aug/19;
+          -------------------
+          */
+          @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+          body{
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            height: 90vh;
+          }
+
+          .text-container > span {
+            text-transform: upper-roman  ;
+            animation: glow 2s ease-in-out infinite;
+          }
+
+          @keyframes glow {
+            0%, 100% {
+              color: #FFF;
+              text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+            }
+
+            10%, 90% {
+              color: #111;
+              text-shadow: none;
+            }
+          }
+        </style>
+    </head>
+    <body>
+      <embed src="birthday.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
+      <div class="" style="display:none;"><img src="https://media.giphy.com/media/10gcy4G5PQXUbK/giphy.gif"></div>
+        <div class="text-container">
+        <span>Happy Birthday</span>
+        <br>
+        <span>Deliana Tayoto</span>
+
+        </div>
+    </body>
+</html>
