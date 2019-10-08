@@ -10,12 +10,12 @@
     "theme_color": "#AB47BC",
     "icons": [
       {
-        "src": "img/nana192.png",
+        "src": "../img/nana192.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "img/nana512.png",
+        "src": "../img/nana512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
