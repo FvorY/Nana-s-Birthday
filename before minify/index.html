@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#AB47BC"/>
+    <link rel="manifest" href="js/manifest.json">
+    <title>Nana's Birthday</title>
+    <link rel="icon" href="img/nana192.png">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+    <!-- Animate CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <!-- OkeyNav CSS -->
+    <link rel="stylesheet" href="css/okeynav.css">
+    <link rel="stylesheet" href="css/okayNav-theme-dark.css">
+    <!-- <link rel="stylesheet" href="css/404-2.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style-dark.css">
+    <link rel="stylesheet" href="css/index-2.css">
+    <link rel="stylesheet" href="css/colors/color-12.css">
+
+    <style media="screen">
+    .preload-wrapper {
+    	z-index: 9999999999;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	background: #fff;
+    	overflow: hidden
+    }
+    #preloader_1 {
+    	position: relative;
+    	width: 60px;
+    	margin: 23% auto
+    }
+    #preloader_1 span {
+    	display: block;
+    	bottom: 0px;
+    	width: 9px;
+    	height: 5px;
+    	background: #9b59b6;
+    	position: absolute;
+    	-webkit-animation: preloader_1 1.5s  infinite ease-in-out;
+    	animation: preloader_1 1.5s  infinite ease-in-out
+    }
+    #preloader_1 span:nth-child(2) {
+    	left: 11px;
+    	-webkit-animation-delay: .2s;
+    	animation-delay: .2s
+    }
+    #preloader_1 span:nth-child(3) {
+    	left: 22px;
+    	-webkit-animation-delay: .4s;
+    	animation-delay: .4s
+    }
+    #preloader_1 span:nth-child(4) {
+    	left: 33px;
+    	-webkit-animation-delay: .6s;
+    	animation-delay: .6s
+    }
+    #preloader_1 span:nth-child(5) {
+    	left: 44px;
+    	-webkit-animation-delay: .8s;
+    	animation-delay: .8s
+    }
+    @-webkit-keyframes preloader_1 {
+    	0% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    	25% {
+    		height: 30px;
+    		transform: translateY(15px);
+    		background: rgb(128, 75, 227)
+    	}
+    	50% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    	100% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    }
+    @keyframes preloader_1 {
+    	0% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    	25% {
+    		height: 30px;
+    		transform: translateY(15px);
+    		background: rgb(128, 75, 227)
+    	}
+    	50% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    	100% {
+    		height: 5px;
+    		transform: translateY(0px);
+    		background: #9b59b6
+    	}
+    }
+    </style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries        -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Modernizr -->
+  </head>
+
+  <body>
+    <div class="preload-wrapper" id="preload" >
+      <div id="preloader_1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+      </div>
+      <!-- header -->
+      <header id="header" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <a alt="Sencillo" class="site-logo" href="index.html">
+            <!-- <img alt="Sencillo" src="img/logo.png" style="width: 150px; height: 50px;"> -->
+          </a>
+          <nav role="navigation" id="nav-main" class="okayNav">
+            <ul class="nav navbar-nav">
+              <li class="dropdown sub-menu active">
+                <a alt="Sencillo" class="dropdown-toggle nav-link" style="cursor: pointer;" data-href="home.html" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Home</a>
+                <!-- <div class="dropdown-menu sub-menu-panel" aria-labelledby="dropdownMenu1">
+                  <a alt="Sencillo" class="sub-menu-item" href="index-1.html">Sencillo 01</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="index-2.html">Sencillo 02</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="index-3.html">Sencillo 03</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="index-4.html">Sencillo 04</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="index-onepage-1.html">Onepage 01</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="index-onepage-2.html">Onepage 02</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="shortcode.html">Shortcode</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="comingsoon-1.html">Coming Soon 1</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="comingsoon-2.html">Coming Soon 2</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="404-1.html">404 V-01</a>
+                  <a alt="Sencillo" class="sub-menu-item" href="404-2.html">404 V-02</a>
+                </div> -->
+              </li>
+              <li class="menu"><a alt="Sencillo" class="nav-link" style="cursor: pointer;" data-href="firework.html">Firework</a></li>
+              <li class="menu"><a alt="Sencillo" class="nav-link" href="cake.html">Cake</a></li>
+              <li class="menu"><a alt="Sencillo" class="nav-link" style="cursor: pointer;" data-href="gift.html">Gift</a></li>
+              <li class="menu"><a alt="Sencillo" class="nav-link" style="cursor: pointer;" data-href="gallery.html">Galery</a></li>
+              <li class="menu"><a alt="Sencillo" class="nav-link" style="cursor: pointer;" data-href="horoscope.html">horoscope</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- /header -->
+
+    <!-- hero area  -->
+    <div id="body-content">
+
+    </div>
+    <!-- /hero area -->
+
+    <!-- footer -->
+    <footer style="padding-top: 0;">
+      <iframe type="text/html" width="0" height="0" src="https://www.youtube.com/embed/oDJ4ct59NC4?autoplay=1&loop=1&playlist=MmdBrYiftzI" frameborder="0" allow="autoplay"></iframe>
+      <!-- credit -->
+      <div class="container">
+        <div class="row">
+          <hr>
+          <div class="footer-credit">
+            <div class="col-lg-6 col-sm-6 col-sx-12">
+              <p>© 2019 Ferdy. Design & Developed With &#10084;</p>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-sx-12">
+              <div class="text-right social-icons">
+                <a alt="Sencillo" href="https://www.facebook.com/fvory.id" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a alt="Sencillo" href="https://www.instagram.com/ferdycp_/ " target="_blank"><i class="fa fa-instagram"></i></a>
+                <a alt="Sencillo" href="https://wa.me/0895355153024" target="_blank"><i class="fa fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /credit -->
+    </footer>
+    <!-- /footer -->
+
+
+    <!-- jquery -->
+    <script src='js/jquery.min.js'></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src='js/jquery.okayNav.js'></script>
+    <script src="js/okeynav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.custom.12691.js"></script>
+    <script src="js/loadingoverlay.js"></script>
+    <!-- <script src="js/color-switcher-dark.js"></script> -->
+    <script type="text/javascript">
+    var statusload = false;
+    $(window).on('load', function(){
+       $(".preload-wrapper").fadeOut("slow");
+       $("#header").fadeIn("slow");
+     })
+
+    $(document).ready(function(){
+        loadPage("home.html");
+    });
+
+    if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('js/sw.js').then(function(registration) {
+      console.log('ServiceWorker registration successful with scope:',  registration.scope);
+    }).catch(function(error) {
+      console.log('ServiceWorker registration failed:', error);
+    });
+  }
+
+    $('.nav-link').on('click', function(e){
+        $('.nav-link').parent().removeClass('active');
+        $(this).parent().addClass('active');
+        page = $(this).data("href");
+        loadPage(page);
+      })
+
+  function loadPage(page) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      var content = document.querySelector("#body-content");
+      if (this.status == 200) {
+        content.innerHTML = xhttp.responseText;
+      } else if (this.status == 404) {
+        xhttp.open("GET", "page/404page.html", true);
+        xhttp.send();
+        return false
+      } else {
+        content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
+      }
+    }
+    };
+    xhttp.open("GET", "page/" + page, true);
+    xhttp.send();
+
+    statusload = true;
+    getdata(page);
+    statusload = false;
+  }
+
+    function getdata(page) {
+      if (page == "horoscope.html" && statusload == true) {
+        $.LoadingOverlaySetup({
+            background      : "rgba(0, 0, 0, 0.65)",
+            imageColor      : "#AB47BC"
+        });
+        $.LoadingOverlay("show");
+          $.ajax({
+               type:'POST',
+               cache: true,
+               dataType: 'json',
+               url:'https://aztro.sameerkumar.website?sign=sagittarius&day=today',
+               success:function(data){
+                 $("#daterange").text(data.date_range)
+                 // $("#description").text(data.description);
+                 var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto" + "&tl=id" + "&dt=t&q=" + encodeURI(data.description);
+                 $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: "json",
+                    cache: true,
+                    success : function(response) {
+                      $('#description').text(response[0][0][0] + response[0][1][0]);
+                      $.LoadingOverlay("hide");
+                    }
+                });
+               }
+          });
+      }
+    }
+    </script>
+    <script type="text/javascript">
+      function showmodal(parm) {
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $(parm).attr("src");
+
+        var modalImg = document.getElementById("imagepreview");
+        modalImg.src = img;
+
+        $('#imagemodal').modal("show");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

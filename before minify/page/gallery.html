@@ -1,0 +1,28 @@
+<style media="screen">
+
+/**
+ * Grid
+ */
+.gallery__grid .row:nth-child(n+2) {
+  /* Adding some margin to create a bit of space under rows */
+  margin-top: 1rem;
+}
+.gallery__column {
+  /* In case the image is bigger than the column */
+  overflow: hidden;
+}
+.fade.in {
+  opacity: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+</style>
+
+<!-- Begin div .grid -->
+<div id="gallery__grid" class="container gallery__grid" data-element="gallery-item"> <div class="row"> <div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/3ee4d192-d2ea-4bad-babd-4f5fd31a6933.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/0b0facc2-f0ad-42ac-8d4d-1b3861438438.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/1763189c-c4c3-4cd2-ab0c-437cf6fe368e.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div></div><div class="row"> <div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/e8f52724-38a7-49c1-a01a-6dd25c9653e3.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/9f29119d-03a1-4de9-bd10-bc52641f8444.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/45e0a29a-637b-48d7-9285-cf180ba0b2a3.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div></div><div class="row"> <div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/fdac9c23-2945-4a14-b4c7-abb8fa16286a.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/72720918-3e9a-4fe2-81ad-0c0a0a19f62c.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div><div class="col-md-4 gallery__column"> <img class="gallery-item" src="img/b36c0ed9-173c-47f9-ad8e-a3e3ac225b9a.jpeg" width="100%" height="50%" onclick="showmodal(this)" alt="gallery thumbnail"> </div></div></div><div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> <h4 class="modal-title" id="myModalLabel">Image preview</h4> </div><div class="modal-body"> <img src="" id="imagepreview" style="width: 100%; height: 100%;" > </div><div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> </div></div></div></div>
